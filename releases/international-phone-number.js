@@ -34,7 +34,7 @@
             }
           }
           read = function() {
-            return ctrl.$setViewValue(element.val());
+            return ctrl.$setViewValue(element.intlTelInput('getNumber'));
           };
           handleWhatsSupposedToBeAnArray = function(value) {
             if (value instanceof Array) {
